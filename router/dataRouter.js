@@ -4,7 +4,7 @@ import dateController from '../controller/dataController.js';
 const router = Router();
 
 router.get('/', dateController.currentDate);
-router.get('/data?', dateController.data);
+router.get('/date?', dateController.date);
 router.get('/:timestampUnix', dateController.unixDate);
 
 
